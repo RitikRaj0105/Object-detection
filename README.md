@@ -66,16 +66,14 @@ Ensure your dataset is properly labeled and split into training and validation s
 2. Training the Model:
 To start training the object detection model, run:
 
-bash
-Copy
+
 python train.py --dataset /path/to/dataset --epochs 50 --batch-size 32
 Adjust the --epochs and --batch-size parameters based on your hardware capabilities.
 
 3. Evaluate the Model:
 After training, evaluate the model's performance using:
 
-bash
-Copy
+
 python evaluate.py --model /path/to/model.h5 --dataset /path/to/validation_dataset
 Results
 After training, the model's performance can be evaluated on a test set. You can visualize the results on test images, including the accuracy and the precision-recall curve.
@@ -84,5 +82,8 @@ Example output for detected objects in an image:
 
 Class 1: Car (confidence: 92%)
 Class 2: Dog (confidence: 89%)
+
+
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details
